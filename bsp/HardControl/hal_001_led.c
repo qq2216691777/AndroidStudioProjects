@@ -4,26 +4,35 @@
 */
 #include <jni.h>  /* /usr/lib/jvm/java-1.7.0-openjdk-amd64/include */
 #include <android/log.h>
+#include <fcntl.h>
+#include <sys/types.h>
+#include <sys/ioctl.h>
+
+static jint fd;
 
 jint ledopen( JNIEnv *env, jobject cls )
 {
+    fd = open("/dev/leds",O_RDWR);
+    if(fd>=0)
+        return 0;
+    else
+        return -1;
 
-    __android_log_print(ANDROID_LOG_DEBUG,"LEDDemo","led open");
-    return 0;
 }
 
 void ledclose( JNIEnv *env, jobject cls )
 {
 
     __android_log_print(ANDROID_LOG_DEBUG,"LEDDemo","led close");
-
+    close(fd);
 }
 
 
 jint ledctrl( JNIEnv *env, jobject cls, jint which, jint status )
 {
-    __android_log_print(ANDROID_LOG_DEBUG,"LEDDemo","led ctrl which = %d, status=%d \r\n",which,status);
+    int ret;
 
+    ret = ioctl(fd,status,which);
     return 0;
 }
 
