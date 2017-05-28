@@ -4,7 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="top.lmissw.app_addons_002_lightdemo.MainActivity">
+    android:orientation="vertical">
+    tools:context="top.lmissw.app_addons_002_lightdemo.MainActivity"
+
+
+
 
 
     <Button
@@ -12,5 +16,12 @@
         android:layout_height="wrap_content"
         android:text="Flashing Light at 20S"
         android:id="@+id/button"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="50"/>
 
 </LinearLayout>
