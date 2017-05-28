@@ -18,3 +18,5 @@
 ## 2017-5-27  23:30  V8  添加了一个控制通知灯的app工程(App_Addons_002_LightDemo)。
 
 ## 2017-5-28  10:00  V9  在app工程中(App_Addons_002_LightDemo)，添加了对背光控制的功能。
+
+## 2017-5-28  10:00  V10 新添Binder系统案例程序(BinderServicemanager) 
