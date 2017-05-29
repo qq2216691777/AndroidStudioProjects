@@ -21,4 +21,6 @@
 
 ## 2017-5-28  10:00  V10 新添Binder系统案例程序(BinderServicemanager) 
 
-## 2017-5-29  9:00   V11 进一步完善了Binder系统案例程序(BinderServicemanager) 
+## 2017-5-29  09:00  V11 进一步完善了Binder系统案例程序(BinderServicemanager) 
+
+## 2017-5-29  22:00  V12 完善了代码，BinderServicemanager支持多线程

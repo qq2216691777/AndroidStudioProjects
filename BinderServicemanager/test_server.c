@@ -237,6 +237,7 @@ int main(int argc, char **argv)
 		/* reply */
 	}
 #endif
+    binder_set_maxthreads(bs,10);
 
     binder_loop(bs, test_server_handler);
 
