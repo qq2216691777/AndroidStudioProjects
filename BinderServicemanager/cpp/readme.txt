@@ -9,3 +9,5 @@ out/target/product/tiny4412/system/bin
 
 c++实现的test_server和c实现的test_client是通用的 反过来也是一样的。
 因为有了android系统，所以不要再运行servermanage程序
+
+//
