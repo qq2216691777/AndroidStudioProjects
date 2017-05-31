@@ -2,8 +2,7 @@
 #ifndef ANDROID_HELLOSERVICE_H
 #define ANDROID_HELLOSERVICE_H
 
-#define LOG_TAG "helloserver"
-#define LOG_NDEBUG 0
+#define LOG_TAG "BinderServer"
 
 #include <utils/Errors.h>  // for status_t
 #include <utils/KeyedVector.h>
