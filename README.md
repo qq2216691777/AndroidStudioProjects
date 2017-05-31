@@ -28,3 +28,5 @@
 ## 2017-5-30  12:00  V13 增加了一套BinderServicemanager的C++代码，同时C++程序和C程序能够通用（运行在Android系统）
 
 ## 2017-5-31  11:30  V14 程序中增加了一个goodbye服务 （BinderServicemanager）
+
+## 2017-5-31  16:30  V15 增加了一套BinderServicemanager的Java代码
