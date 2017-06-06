@@ -30,3 +30,5 @@
 ## 2017-5-31  11:30  V14 程序中增加了一个goodbye服务 （BinderServicemanager）
 
 ## 2017-5-31  16:30  V15 增加了一套BinderServicemanager的Java代码
+
+## 2017-6-06  13:30  V16 增加了一个监控目录文件的代码（inotify）
